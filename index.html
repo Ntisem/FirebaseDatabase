@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase-Database</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+        <form>
+            <label for="userId">User ID</label>
+            <input type="text" name="userIdField" id="userIdField">
+            <label for="fullname">Fullname</label>
+            <input type="text" name="nameField" id="nameField">
+            <label for="age">Age</label>
+            <input type="text" name="ageField" id="ageField">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phoneField" id="phoneField">
+            <label for="email">Email</label>
+            <input type="email" name="emailField" id="emailField">
+            <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+            <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+            <button id="deleteBtn" class="btn waves-effect red darken-1">Delete</button>
+        </form>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBxZ7bwzVhBBAA4aka34KaDq29vgCIQ_Mg",
+            authDomain: "fir-db-28ef6.firebaseapp.com",
+            databaseURL: "https://fir-db-28ef6.firebaseio.com",
+            projectId: "fir-db-28ef6",
+            storageBucket: "fir-db-28ef6.appspot.com",
+            messagingSenderId: "1395574047",
+            appId: "1:1395574047:web:072ec0425d4cd6d44d5c2a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="javascript" src="./app.js"></script>
+</body>
+
+</html>
